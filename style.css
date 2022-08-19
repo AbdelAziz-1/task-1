@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Exo+2:wght@400;500&family=Indie+Flower&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:wght@400;500;600;700&family=Quicksand:wght@300;400&family=Tapestry&family=Uchen&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+
+  font-family: "Pacifico", cursive;
+}
+
+body {
+  height: 3000px;
+}
+/* section 1 */
+.navbar {
+  background-image: linear-gradient(
+    rgb(59, 53, 53),
+    rgb(241, 230, 230),
+    rgb(56, 46, 46)
+  );
+}
+
+.navbar-brand span {
+  font-size: 30px;
+}
+
+.navbar a span {
+  color: red;
+  margin-left: 20px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 800px;
+}
+
+.navbar a {
+  margin-left: 20px;
+  font-size: 20px;
+}
+/* section 2 */
+.nesr {
+  margin-top: 50px;
+  height: 800px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+.nesr h1 {
+  padding: 5px 0px;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: antiquewhite;
+}
+
+.nesr .border,
+.Gallary .border {
+  margin: 5px auto;
+  width: 60%;
+  background-image: linear-gradient(
+    to right,
+    rgba(177, 119, 216, 0.973),
+    white,
+    rgba(177, 119, 216, 0.973)
+  );
+  height: 10px;
+  border-radius: 50%;
+}
+
+.nesr .dashed1,
+.Gallary .dashed1 {
+  margin: 15px auto;
+  width: 45%;
+  border-top: 8px dashed rgba(177, 119, 216, 0.973);
+  border-radius: 50%;
+}
+
+.nesr .dashed2,
+.Gallary .dashed2 {
+  margin: 15px auto;
+  width: 35%;
+  border-top: 8px dashed rgba(177, 119, 216, 0.973);
+  border-radius: 50%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex .content1 {
+  width: 40%;
+  height: 500px;
+}
+
+.flex .content2 {
+  width: 60%;
+  height: 500px;
+  padding-top: 40px;
+}
+
+.content1 img {
+  padding-left: 50px;
+}
+
+.content2 h1 {
+  color: blue;
+}
+
+.content2 p {
+  color: white;
+  text-align: center;
+}
+
+.heder {
+  text-align: center;
+}
+.heder ul {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(177, 119, 216, 0.973);
+}
+.heder ul li {
+  list-style: none;
+  color: #fff;
+  width: 100px;
+  height: 50px;
+  padding-top: 5px;
+  border-radius: 15px;
+  background-image: linear-gradient(rgb(227, 21, 21), rgb(189, 236, 1));
+  cursor: pointer;
+}
+.heder ul li span {
+  font-size: 25px;
+}
+/* cards     */
+.Gallary {
+  margin-top: 50px;
+  height: 800px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+.Gallary h1 {
+  padding: 5px 0px;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: antiquewhite;
+}
+.container {
+  width: 90%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+.container .card {
+  width: 350px;
+  height: 220px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px darkorange;
+  overflow: hidden;
+}
+
+.container .card .image {
+  width: 350px;
+  height: 220px;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+
+.container .card .image:hover {
+  transform: scale(1.2);
+}
+/* Contact Us */
+
+/* media Query */
+@media (max-width: 1024px) and (min-width: 1024px) {
+  .flex .content1 {
+    width: 30%;
+    padding-right: 10px;
+  }
+  .content1 img {
+    padding-left: 0px;
+  }
+  .flex .content2 {
+    width: 60%;
+    height: 500px;
+    padding-top: 40px;
+  }
+  .container .card {
+    width: 300px;
+    height: 200px;
+  }
+
+  .container .card .image {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) and (max-width: 768px) {
+  .nesr h1 {
+    font-size: 30px;
+  }
+  .nesr .border {
+    width: 30%;
+    height: 3px;
+  }
+  .nesr .dashed1 {
+    width: 30%;
+    border-top: 2px dashed rgba(177, 119, 216, 0.973);
+  }
+  .nesr .dashed2 {
+    width: 30%;
+    border-top: 2px dashed rgba(177, 119, 216, 0.973);
+  }
+
+  .flex {
+    display: block;
+  }
+  .nesr {
+    height: 1200px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+  }
+  .flex .content1 {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .Gallary {
+    height: 800px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+  }
+  .flex .content2 {
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    height: 500px;
+    padding-top: 40px;
+  }
+  .container .card {
+    width: 200px;
+    height: 200px;
+  }
+
+  .container .card .image {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nesr {
+    height: auto;
+  }
+  .flex .content1 {
+    height: 300px;
+  }
+  .flex .content1 img {
+    width: 80%;
+    padding: 0;
+    margin-left: 10%;
+  }
+  .container .card {
+    width: 160px;
+    height: 150px;
+  }
+
+  .container .card .image {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 320px) {
+  .flex .content1 {
+    height: 200px;
+  }
+}
